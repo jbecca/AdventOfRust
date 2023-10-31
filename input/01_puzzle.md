@@ -23,8 +23,24 @@ For example:
 
 To *what floor* do the instructions take Santa?
 
-To begin, [get your puzzle input](1/input).
+Your puzzle answer was `280`.
+
+The first half of this puzzle is complete! It provides one gold star: \*
+
+\--- Part Two ---
+----------
+
+Now, given the same instructions, find the *position* of the first character that causes him to enter the basement (floor `-1`). The first character in the instructions has position `1`, the second character has position `2`, and so on.
+
+For example:
+
+* `)` causes him to enter the basement at character position `1`.
+* `()())` causes him to enter the basement at character position `5`.
+
+What is the *position* of the character that causes Santa to first enter the basement?
 
 Answer:
 
-You can also [Shareon [Twitter](https://twitter.com/intent/tweet?text=%22Not+Quite+Lisp%22+%2D+Day+1+%2D+Advent+of+Code+2015&url=https%3A%2F%2Fadventofcode%2Ecom%2F2015%2Fday%2F1&related=ericwastl&hashtags=AdventOfCode) [Mastodon](javascript:void(0);)] this puzzle.
+Although it hasn't changed, you can still [get your puzzle input](1/input).
+
+You can also [Shareon [Twitter](https://twitter.com/intent/tweet?text=I%27ve+completed+Part+One+of+%22Not+Quite+Lisp%22+%2D+Day+1+%2D+Advent+of+Code+2015&url=https%3A%2F%2Fadventofcode%2Ecom%2F2015%2Fday%2F1&related=ericwastl&hashtags=AdventOfCode) [Mastodon](javascript:void(0);)] this puzzle.
