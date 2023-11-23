@@ -5,6 +5,7 @@ pub fn part2() -> Result<(), Box<dyn Error>> {
     let input_string = std::fs::read_to_string(input_path)?;
     let mut total_nice = 0;
     for line in input_string.lines() {
+        line.char_indices()
     }
 
 }
