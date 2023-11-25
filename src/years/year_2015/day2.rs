@@ -1,6 +1,6 @@
 use std::fs::read_to_string;
 
-pub fn main() -> std::io::Result<()> {
+pub fn both_parts() -> std::io::Result<()> {
     let path = "/Users/jeffreybecca/projects/AoC/AdventOfRust/input/02.input";
     let mut total_square_feet: i32 = 0;
     let mut total_ribbon: i32 = 0;
