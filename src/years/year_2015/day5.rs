@@ -4,9 +4,7 @@ pub fn part2() -> Result<(), Box<dyn Error>> {
     let input_path = "/Users/jeffreybecca/projects/AoC/advent_of_rust/input/05.input";
     let input_string = std::fs::read_to_string(input_path)?;
     let mut total_nice = 0;
-    for line in input_string.lines() {
-        line.char_indices()
-    }
+    Ok(())
 
 }
 
@@ -46,9 +44,10 @@ pub fn part1() -> Result<(), Box<dyn Error>>{
             last_check = true
         }
         if !last_check {continue};
-        println!("{}, {}, {}, {}", line,vowel_count, double_let, last_check);
+       // println!("{}, {}, {}, {}", line,vowel_count, double_let, last_check);
         total_nice += 1;
     }
+    println!("Day 5\n=====");
     println!("Total nice: {}", total_nice);
     Ok(())
 }

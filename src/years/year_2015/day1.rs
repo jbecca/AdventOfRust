@@ -14,7 +14,6 @@ pub fn part1() -> i32 {
 }
 
 pub fn part2() -> usize {
-
     let mut floor2 = 0;
     let mut index = 0;
     let input = read_input();

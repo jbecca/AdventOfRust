@@ -6,14 +6,21 @@ pub fn both_parts() -> std::io::Result<()> {
     let mut total_ribbon: i32 = 0;
     for line in read_to_string(path)?.lines() {
         let a: Vec<i32> = line.split('x').map(|x| x.parse().unwrap()).collect();
-        if let [l,w,h] = a[..] {
-            let surface_area: i32 = [l*w, w*h, h*l].iter().sum();
-            let smallest_perim: i32 = * [2 * (l+w), 2 * (w+h), 2 * (h+l)].iter().min().unwrap();
+        if let [l, w, h] = a[..] {
+            let surface_area: i32 = [l * w, w * h, h * l].iter().sum();
+            let smallest_perim: i32 = *[2 * (l + w), 2 * (w + h), 2 * (h + l)]
+                .iter()
+                .min()
+                .unwrap();
             let volume = l * w * h;
             total_ribbon += smallest_perim + volume;
-            total_square_feet = total_square_feet + (2 * surface_area + [l*w, w*h, h*l].iter().min().unwrap());
+            total_square_feet = total_square_feet
+                + (2 * surface_area + [l * w, w * h, h * l].iter().min().unwrap());
         }
     }
-    println!("Day 2\npart 1: {}\npart 2: {}\n", total_square_feet, total_ribbon);
+    println!(
+        "Day 2\n=====\npart 1: {}\npart 2: {}\n",
+        total_square_feet, total_ribbon
+    );
     Ok(())
 }
