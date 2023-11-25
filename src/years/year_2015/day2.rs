@@ -1,7 +1,7 @@
 use std::fs::read_to_string;
 
 pub fn both_parts() -> std::io::Result<()> {
-    let path = "/Users/jeffreybecca/projects/AoC/AdventOfRust/input/02.input";
+    let path = "/Users/jeffreybecca/projects/AoC/advent_of_rust/input/02.input";
     let mut total_square_feet: i32 = 0;
     let mut total_ribbon: i32 = 0;
     for line in read_to_string(path)?.lines() {
@@ -14,6 +14,6 @@ pub fn both_parts() -> std::io::Result<()> {
             total_square_feet = total_square_feet + (2 * surface_area + [l*w, w*h, h*l].iter().min().unwrap());
         }
     }
-    println!("{} {}", total_square_feet, total_ribbon);
+    println!("Day 2\npart 1: {}\npart 2: {}\n", total_square_feet, total_ribbon);
     Ok(())
 }

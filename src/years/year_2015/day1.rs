@@ -1,7 +1,7 @@
 use std::fs::read_to_string;
 
 fn read_input() -> String {
-    read_to_string("/Users/jeffreybecca/projects/AoC/AdventOfRust/input/01.input").unwrap()
+    read_to_string("/Users/jeffreybecca/projects/AoC/advent_of_rust/input/01.input").unwrap()
 }
 pub fn part1() -> i32 {
     let input = read_input();

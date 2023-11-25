@@ -3,7 +3,7 @@ use std::fs::read_to_string;
 use std::error::Error;
 
 pub fn part1() -> Result<(), Box<dyn Error>>{
-    let path = "/Users/jeffreybecca/projects/AoC/AdventOfRust/input/03.input";
+    let path = "/Users/jeffreybecca/projects/AoC/advent_of_rust/input/03.input";
     let input = read_to_string(path)?;
     let mut hmap = HashMap::new();
     let e = hmap.entry((0,0)).or_insert(0);
@@ -29,7 +29,7 @@ pub fn part1() -> Result<(), Box<dyn Error>>{
 
 }
 pub fn part2() -> Result<(), Box<dyn Error>>{
-    let path = "/Users/jeffreybecca/projects/AoC/AdventOfRust/input/03.input";
+    let path = "/Users/jeffreybecca/projects/AoC/advent_of_rust/input/03.input";
     let input = read_to_string(path)?;
     let mut hmap = HashMap::new();
     let e = hmap.entry((0,0)).or_insert(0);

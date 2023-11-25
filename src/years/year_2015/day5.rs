@@ -1,7 +1,7 @@
 use std::{error::Error};
 
 pub fn part2() -> Result<(), Box<dyn Error>> {
-    let input_path = "/Users/jeffreybecca/projects/AoC/AdventOfRust/input/05.input";
+    let input_path = "/Users/jeffreybecca/projects/AoC/advent_of_rust/input/05.input";
     let input_string = std::fs::read_to_string(input_path)?;
     let mut total_nice = 0;
     for line in input_string.lines() {
@@ -11,7 +11,7 @@ pub fn part2() -> Result<(), Box<dyn Error>> {
 }
 
 pub fn part1() -> Result<(), Box<dyn Error>>{
-    let input_path = "/Users/jeffreybecca/projects/AoC/AdventOfRust/input/05.input";
+    let input_path = "/Users/jeffreybecca/projects/AoC/advent_of_rust/input/05.input";
     let input_string = std::fs::read_to_string(input_path)?;
     let mut total_nice = 0;
     for line in input_string.lines() {
