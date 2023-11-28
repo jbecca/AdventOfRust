@@ -30,3 +30,10 @@ pub fn part2() -> usize {
     }
     index
 }
+
+pub fn run_both_parts() -> () {
+    let part1 = part1();
+    let part2 = part2();
+    println!("Part 1: {part1}");
+    println!("Part 2: {part2}");
+}

@@ -23,7 +23,7 @@ pub fn part1() -> Result<(), Box<dyn Error>> {
         *house += 1
     }
 
-    println!("Day 3\n=====\nPart 1 answer: {}", hmap.keys().len());
+    println!("Part 1: {}", hmap.keys().len());
 
     Ok(())
 }
@@ -70,7 +70,7 @@ pub fn part2() -> Result<(), Box<dyn Error>> {
         turn += 1;
     }
 
-    println!("Part 2 answer: {}\n", hmap.keys().len());
+    println!("Part 2: {}\n", hmap.keys().len());
 
     Ok(())
 }

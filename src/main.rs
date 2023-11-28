@@ -1,24 +1,36 @@
 pub mod years;
 
-use years::year_2015::{day1, day2, day3, day4, day5};
+use clap::{arg, command, value_parser};
 
 pub fn main() {
-    println!("Day 1\n=====");
-    let first_answer = day1::part1();
-    let second_answer = day1::part2();
-    println!(
-        "part 1 answer: {}\npart 2 answer: {}\n",
-        first_answer, second_answer
-    );
+    let matches = command!()
+        .arg(
+            arg!([year] "Year of Advent of Code")
+                .required(true)
+                .value_parser(value_parser!(u16).range(2015..=2016))
+        )
+        .arg(
+            arg!([day] "Day of code to run")
+                .required(true)
+                .value_parser(value_parser!(u16).range(1..=25)),
+        )
+        .get_matches();
 
-    let _ = day2::both_parts();
+    
+    if let Some(year) = matches.get_one::<u16>("year") {
+        println!("Year: {year}")
+    }
 
-    let _ = day3::part1();
-    let _ = day3::part2();
+    if let Some(day) = matches.get_one::<u16>("day") {
+        println!("Day:  {day}")
+    }
 
-    let _ = day4::part1();
-    let _ = day4::part2();
+    let year = matches.get_one::<u16>("year").unwrap();
+    let day = matches.get_one::<u16>("day").unwrap();
 
-    let _ = day5::part1();
+    println!("====================");
+    match year {
+        2015 => years::year_2015::run_day(&day),
+        _ => println!("Invalid year")
+    }
 }
-

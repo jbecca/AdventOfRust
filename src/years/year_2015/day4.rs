@@ -1,8 +1,6 @@
 pub fn part1() {
     let mut found = false;
     let mut num = 1;
-    println!("Day 4\n=====");
-
     while !found {
         let t = "yzbqklnj".to_string() + &num.to_string();
         let result = md5::compute(t.as_bytes());

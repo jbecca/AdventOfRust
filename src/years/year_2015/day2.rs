@@ -19,7 +19,7 @@ pub fn both_parts() -> std::io::Result<()> {
         }
     }
     println!(
-        "Day 2\n=====\npart 1: {}\npart 2: {}\n",
+        "Part 1: {}\nPart 2: {}\n",
         total_square_feet, total_ribbon
     );
     Ok(())
