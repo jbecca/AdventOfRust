@@ -7,7 +7,7 @@ pub fn main() {
         .arg(
             arg!([year] "Year of Advent of Code")
                 .required(true)
-                .value_parser(value_parser!(u16).range(2015..=2017))
+                .value_parser(value_parser!(u16).range(2015..=2023))
         )
         .arg(
             arg!([day] "Day of code to run")
@@ -32,6 +32,7 @@ pub fn main() {
     match year {
         2015 => years::year_2015::run_day(&day),
         2017 => years::year_2017::run_day(&day).unwrap(),
+        2023 => years::year_2023::run_day(&day).unwrap(),
         _ => println!("Invalid year")
     }
 }

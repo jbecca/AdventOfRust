@@ -20,9 +20,6 @@ fn part1() -> Result<u32, Box<dyn Error>>{
 
 }
 
-fn part2() {
-
-}
 
 pub fn run_both_parts() -> Result<(), Box<dyn Error>>{
     let part1_answer = part1()?;
