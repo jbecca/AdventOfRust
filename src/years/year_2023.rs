@@ -5,6 +5,7 @@ pub mod day2;
 pub mod day3;
 pub mod day4;
 pub mod day5;
+pub mod day6;
 
 pub(crate) fn run_day(day: &u16) -> Result<(), Box<dyn Error>> {
     match day {
@@ -13,6 +14,7 @@ pub(crate) fn run_day(day: &u16) -> Result<(), Box<dyn Error>> {
         3 => Ok(day3::run_both_parts()?),
         4 => Ok(day4::run_both_parts()?),
         5 => Ok(day5::run_both_parts()?),
+        6 => Ok(day6::run_both_parts()?),
         _ => Ok(println!("Invalid day")),
     }
 }
