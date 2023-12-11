@@ -18,9 +18,6 @@ pub fn both_parts() -> std::io::Result<()> {
                 + (2 * surface_area + [l * w, w * h, h * l].iter().min().unwrap());
         }
     }
-    println!(
-        "Part 1: {}\nPart 2: {}\n",
-        total_square_feet, total_ribbon
-    );
+    println!("Part 1: {}\nPart 2: {}\n", total_square_feet, total_ribbon);
     Ok(())
 }

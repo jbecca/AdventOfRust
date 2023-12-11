@@ -1,8 +1,9 @@
-use std::{fs::read_to_string, error::Error};
 use itertools::Itertools;
+use std::{error::Error, fs::read_to_string};
 
-fn part1() -> Result<u32, Box<dyn Error>>{
-    let raw_input = read_to_string("/Users/jeffreybecca/projects/AoC/advent_of_rust/input/2017/day1.input")?;
+fn part1() -> Result<u32, Box<dyn Error>> {
+    let raw_input =
+        read_to_string("/Users/jeffreybecca/projects/AoC/advent_of_rust/input/2017/day1.input")?;
     let input = raw_input.trim();
 
     let mut answer = 0;
@@ -17,11 +18,9 @@ fn part1() -> Result<u32, Box<dyn Error>>{
     };
 
     Ok(answer)
-
 }
 
-
-pub fn run_both_parts() -> Result<(), Box<dyn Error>>{
+pub fn run_both_parts() -> Result<(), Box<dyn Error>> {
     let part1_answer = part1()?;
     println!("Part 1: {part1_answer}");
     Ok(())
